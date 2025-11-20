@@ -13,6 +13,7 @@ dependencies = [
     "langchain-community>=0.4.1",
     "langchainhub>=0.1.21",
     "langgraph>=1.0.3",
+    "pytest>=9.0.1",
     "python-dotenv>=1.2.1",
     "tavily-python>=0.7.13",
 ]
