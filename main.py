@@ -1,12 +1,9 @@
-from langchain import hub
-
-
-prompt = hub.pull("rlm/rag-prompt") 
+from graph.graph import app
 
 
 def main():
-    print(prompt)
-    print("Hello from rag-agent!")
+    print("Starting LangGraph application...")
+    print(app.invoke({"question": "What is agent memory?"}))
 
 
 if __name__ == "__main__":
