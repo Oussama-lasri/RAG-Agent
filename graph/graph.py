@@ -28,10 +28,13 @@ workflow.add_node(WEB_SEARCH , web_search)
 workflow.set_entry_point(RETRIEVE)
 
 workflow.add_edge(RETRIEVE , GRADE_DOCUMENTS )
-workflow.add_conditional_edges(GRADE_DOCUMENTS , decide_to_generate , {
+workflow.add_conditional_edges(GRADE_DOCUMENTS , decide_to_generate , 
+#    Possible branches depending on decision result.
+    {
     GENERATE: GENERATE,
     WEB_SEARCH: WEB_SEARCH
-})
+    }
+    )
 
 workflow.add_edge(WEB_SEARCH , GENERATE)
 workflow.add_edge(GENERATE , END )

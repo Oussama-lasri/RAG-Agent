@@ -1,5 +1,5 @@
 from typing import Any, Dict
-from graph.chains.generation import genetation_chain 
+from graph.chains.generation import generation_chain 
 from graph.state import GraphState
 
 def generate_answer(state: GraphState) -> Dict[str, Any]:
@@ -7,7 +7,7 @@ def generate_answer(state: GraphState) -> Dict[str, Any]:
     question = state["question"]
     context = state["documents"]
 
-    generation = genetation_chain.invoke(
+    generation = generation_chain.invoke(
         {"question": question, "context": context}
     )
     return {"generation": generation, "question": question, "documents": context}
