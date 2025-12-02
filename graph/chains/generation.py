@@ -10,7 +10,7 @@ llm = ChatOpenAI(temperature=0)
 client = Client()
 prompt = client.pull_prompt("rlm/rag-prompt")
 pprint(prompt)
-genetation_chain = prompt | llm | StrOutputParser()
+generation_chain = prompt | llm | StrOutputParser()
 
 
 
