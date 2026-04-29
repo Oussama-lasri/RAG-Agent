@@ -54,7 +54,7 @@ Retrieval behavior dynamically changes depending on query complexity, relevance,
 ![alt text](graph.png)
 ---
 Inspired by recent research in:
-- Self-RAG (ICLR 2024)
+- Self-RAG 
 - Adaptive RAG
 - Corrective RAG (CRAG)
 - Agentic Retrieval Workflows
