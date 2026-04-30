@@ -106,4 +106,5 @@ workflow.add_edge(GENERATE , END )
 
 app = workflow.compile()
 
-app.get_graph().draw_mermaid_png(output_file_path="graph.png")
+if __name__ == "__main__":
+    app.get_graph().draw_mermaid_png(output_file_path="graph.png")
