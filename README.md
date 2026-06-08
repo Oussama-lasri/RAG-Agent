@@ -58,3 +58,15 @@ Inspired by recent research in:
 - Adaptive RAG
 - Corrective RAG (CRAG)
 - Agentic Retrieval Workflows
+
+## Demo video
+
+
+
+https://github.com/user-attachments/assets/d72d2458-8fff-4e6f-99c8-5215cf33fc14
+
+
+
+
+
+
